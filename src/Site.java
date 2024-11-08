@@ -1,5 +1,11 @@
 // Site.java
 public class Site {
-    // No fields or methods in Site class
-    // This is just an empty superclass for organization
+    protected static final double TAX_RATE = 0.2;
+    protected double _units;
+    protected double _rate;
+
+    public Site(double units, double rate) {
+        this._units = units;
+        this._rate = rate;
+    }
 }

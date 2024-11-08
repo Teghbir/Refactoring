@@ -6,8 +6,7 @@ public class LifelineSite extends Site {
 
     // Constructor
     public LifelineSite(double units, double rate) {
-        this._units = units;
-        this._rate = rate;
+        super(units, rate);
     }
 
     public double getBillableAmount() {

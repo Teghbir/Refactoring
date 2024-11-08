@@ -1,13 +1,9 @@
 // ResidentialSite.java
 public class ResidentialSite extends Site {
-    private double _units;
-    private double _rate;
-    private static final double TAX_RATE = 0.2;
 
     // Constructor
     public ResidentialSite(double units, double rate) {
-        this._units = units;
-        this._rate = rate;
+        super(units, rate);
     }
 
     public double getBillableAmount() {
