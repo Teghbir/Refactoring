@@ -8,4 +8,13 @@ public class Site {
         this._units = units;
         this._rate = rate;
     }
+
+    public double getBillableAmount() {
+        return getBaseAmount() + getTaxAmount();
+    }
+
+    // Abstract methods for subclasses to implement
+    protected abstract double getBaseAmount();
+    protected abstract double getTaxAmount();
+
 }
